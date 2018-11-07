@@ -1,0 +1,1111 @@
+@c:#fff;
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+html{
+  font-size: ~"calc(100vw/7.5)";
+}
+ul,a{
+  list-style: none;
+  text-decoration:none;
+}
+header{
+  background: url('../images/1.jpg') 0 0 no-repeat;
+  background-size: 100%;
+  height:2.68rem;
+  .header_top{
+    //background-color:rgba(7, 17, 27, 0.5);
+    display: flex;
+    padding: 0.48rem 0.24rem 0.36rem 0.48rem;
+    .logo{
+      width: 1.28rem;
+      height: 1.28rem;
+      margin-right: 0.32rem;
+      border-radius: 4px;
+    }
+    .text{
+      flex:1;
+      p.brand{
+        display: flex;
+        margin: 0.04rem 0 0.16rem 0;
+        height: 0.36rem;
+        font-size: 0.32rem;
+        color:@c;
+        font-weight:bold;
+        line-height: 0.33rem;
+        img{
+          width: 0.6rem;
+          height: 0.36rem;
+          margin-right:0.12rem;
+        }
+      }
+      p.timer{
+        font-size: 0.24rem;
+        line-height: 1;
+        color:@c;
+        font-weight:200;
+        margin-bottom: 0.2rem;
+      }
+      p.discounts{
+        display: flex;
+        font-size: 0.2rem;
+        line-height: 0.23rem;
+        color:@c;
+        font-weight:200;
+        img{
+          width: 0.24rem;
+          height: 0.24rem;
+          margin-right:0.08rem;
+        }
+      }
+      p.count{
+        width: 0.86rem;
+        height: 0.48rem;
+        border-radius:0.24rem;
+        background-color:#4D5055;
+        font-size: 0.2rem;
+        line-height: 0.48rem;
+        color:@c;
+        font-weight:200;
+        position: absolute;
+        right: 0.24rem;
+        top:1.34rem;
+        text-align:center;
+      }
+    }
+  }
+
+  //头部公告栏
+  .notic{
+    display: flex;
+    height:0.56rem;
+    background-color:rgba(7, 17, 27, 0.2);
+    align-items: center;
+    img{
+      width: 0.44rem;
+      height: 0.24rem;
+      margin: 0.16rem 0.08rem 0.16rem 0.24rem;
+    }
+    p{
+      flex:1;
+      height:0.3rem;
+      font-size: 0.2rem;
+      line-height: 0.32rem;
+      color:@c;
+      font-weight:200;
+      margin-right:0.08rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    b{
+      height:0.56rem;
+      font-size:0.2rem;
+      color:@c;
+      line-height:0.56rem;
+      margin-right:0.24rem;
+    }
+  }
+}
+// 导航栏
+nav{
+  height: 0.8rem;
+  border-bottom:2px solid rgba(7, 17, 27, 0.1);
+  display: flex;
+  justify-content:space-around;
+  align-items:center;
+  span{
+    color:rgb(77, 85, 93);
+    font-size:0.28rem;
+    line-height:0.28rem;
+  }
+  .active{
+    color: rgb(240, 20, 20);
+  }
+}
+//导航栏对应的三大部分
+.bd{
+  // 首页
+  .goods{
+    display: flex;
+    .gallery-left{
+      .swiper-wrapper{
+        .swiper-slide{
+          width: 1.6rem;
+          height: 1.08rem;
+          font-size:0.24rem;
+          color:#575B5F;
+          font-weight:200;
+          padding:0 0.24rem;
+          line-height:0.28rem;
+          background-color:#f3f5f7;
+          span{
+            display: flex;
+            align-items:center;
+            width: 1.12rem;
+            height: 1.08rem;
+            color:#575B5F;
+            border-bottom:1px solid rgba(7, 17, 27, 0.1);
+            a{
+              color:#575B5F;
+              img{
+                width: 0.24rem;
+                height: 0.24rem;
+                margin-right:0.04rem;
+              }
+            }
+          }
+        }
+        .on{
+          background-color:@c;
+          span{
+            color:rgb(7, 17, 27);
+            border:none;
+          }
+        }
+      }
+    }
+    //右边食物菜单部分
+    .gallery-thumbs{
+      flex:1;
+      .menu{
+        .swiper-slide{
+          h4{
+            height: 0.52rem;
+            color:rgb(147,153,159);
+            font-size:0.24rem;
+            line-height:0.52rem;
+            background-color:#f3f5f7;
+            padding-left:0.28rem;
+            border-left: 2px solid #d9dde1;
+          }
+          //皮蛋瘦肉粥配包子套餐
+          .preserved_egg{
+            display: flex;
+            padding: 0.34rem 0;
+            margin:0 0.36rem;
+            position: relative;
+            border-top:1px solid rgba(7,17,27,0.1);
+            img{
+              width: 1.14rem;
+              height: 1.14rem;
+              margin-right: 0.2rem;
+            }
+            //mx名字意思是皮蛋瘦肉粥配包子套餐下面的明细
+            .mx{
+              p.txt_one{
+                height: 0.28rem;
+                color:rgb(7,17,27);
+                font-size:0.28rem;
+                line-height:0.28rem;
+                margin-bottom: 0.16rem;
+                margin-top: 0.04rem;
+              }
+              p.txt_two{
+                color:rgb(147,153,159);
+                font-size:0.2rem;
+                line-height:0.22rem;
+                width:2.7rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                margin-bottom: 0.16rem;
+              }
+              p.txt_three{
+                color:rgb(147,153,159);
+                font-size:0.2rem;
+                line-height:0.2rem;
+              }
+              p.txt_four{
+                display: flex;
+                height:0.48rem;
+                font-weight:bold;
+                margin-top: 0.03rem;
+                .price1{
+                  font-size:0.28rem;
+                  line-height:0.48rem;
+                  color:rgb(240,20,20);
+                  margin-right: 0.16rem;
+                }
+                .price2{
+                  font-size:0.2rem;
+                  line-height:0.48rem;
+                  text-decoration:line-through;
+                  color:rgb(147,153,159);
+                }
+              }
+            }
+            .add{
+              position: absolute;
+              width: 0.48rem;
+              height: 0.48rem;
+              bottom:0.36rem;
+              right: 0rem;
+              color:@c;
+              font-size:0.48rem;
+              font-weight:bold;
+              line-height:0.48rem;
+              border-radius: 0.24rem;
+              text-align:center;
+              background-color:rgb(0, 160, 220);
+            }
+            .subtract{
+              position: absolute;
+              width: 0.48rem;
+              height: 0.48rem;
+              bottom:0.36rem;
+              right: 0rem;
+              color:@c;
+              font-size:0.48rem;
+              font-weight:bold;
+              line-height:0.48rem;
+              border-radius: 0.24rem;
+              text-align:center;
+              background-color:rgb(0, 160, 220);
+            }
+          }
+        }
+      }
+    }
+  }
+  // 评价页
+  .comment{
+    .ratings{
+      overflow-y: auto;
+      .evaluate_top{
+        display: flex;
+        padding: 0.36rem 0.48rem;
+        border-bottom:2px solid rgba(7, 17, 27, 0.1);
+        .grade{
+          padding-right: 0.48rem;
+          border-right:1px solid rgba(7, 17, 27, 0.1);
+          .score_one{
+            font-size:0.48rem;
+            line-height:0.56rem;
+            color:rgb(255, 153, 0);
+            margin-bottom:0.12rem;
+            text-align:center;
+          }
+          .score_two{
+            font-size:0.24rem;
+            line-height:0.24rem;
+            color:rgb(7, 17, 27);
+            margin-bottom:0.16rem;
+            text-align:center;
+          }
+          .score_three{
+            font-size:0.20rem;
+            line-height:0.20rem;
+            color:rgb(147,153,159);
+            margin-bottom:0.12rem;
+          }
+        }
+        .starLevel{
+          margin-left: 0.48rem;
+          .star_one,.star_two{
+            display: flex;
+            .star_img{
+              display: flex;
+              img{
+                margin-top:0.06rem;
+                width: 0.2rem;
+                height: 0.2rem;
+                margin-right:0.05rem;
+              }
+            }
+            .attitude,.minute{
+              font-size:0.24rem;
+              line-height:0.36rem;
+              margin-bottom:0.16rem;
+            }
+            .attitude{
+              color:rgb(7, 17, 27);
+              margin-right: 0.24rem;
+            }
+            .minute{
+              color:rgb(255,153,0);
+              margin-left:0.24rem;
+            }
+          }
+          .star_three{
+            display: flex;
+            .time,.minute{
+              font-size:0.24rem;
+              line-height:0.36rem;
+              margin-bottom:0.16rem;
+            }
+            .time{
+              color:rgb(7, 17, 27);
+              margin-right: 0.24rem;
+            }
+            .minute{
+              color:rgb(147,153,159);
+            }
+          }
+        }
+      }
+      // 灰色空白区
+      .blank{
+        height:0.32rem;
+        background:#F3F5F7;
+        border-bottom:2px solid rgba(7, 17, 27, 0.1);
+      }
+      // 网友评价栏--全部、满意、不满意
+      .evaluate_title{
+        .title_one{
+          padding:0.34rem 0.36rem 0.36rem 0;
+          margin-left:0.36rem;
+          margin-right:0.36rem;
+          display: flex;
+          border-bottom:1px solid rgba(7, 17, 27, 0.1);
+          .all,.satisfaction,.discontent{
+            display: flex;
+            height:0.64rem;
+            margin-right:0.16rem;
+            justify-content:center;
+            span{
+              font-size:0.24rem;
+              line-height:0.64rem;
+              margin-right:0.1rem;
+            }
+            a{
+              font-size:0.18rem;
+              line-height:0.72rem;
+            }
+          }
+          .all{
+            color:@c;
+            background:#00a0dc;
+            width:1.2rem;
+          }
+          .satisfaction{
+            color:#58636B;
+            background:#E9EBEC;
+            width:1.2rem;
+          }
+          .discontent{
+            background:#E9EBEC;
+            color:#58636B;
+            width:1.44rem;
+          }
+          .on{
+            background:#CCECF8;
+          }
+        }
+        .title_two{
+          display: flex;
+          height:0.97rem;
+          border-bottom:2px solid rgba(7, 17, 27, 0.1);
+          line-height:0.98rem;
+          img{
+            width:0.4rem;
+            height:0.4rem;
+            margin-left:0.36rem;
+            margin-top:0.26rem;
+          }
+          span{
+            font-size:0.24rem;
+            color:rgb(147,153,159);
+          }
+        }
+      }
+      // 网友评价内容栏
+      .evaluate_txt_f{
+        .evaluate_txt{
+          display: flex;
+          padding:0.36rem 0;
+          margin-right:0.36rem;
+          margin-left:0.36rem;
+          border-bottom:1px solid rgba(7, 17, 27, 0.1);
+          position: relative;
+          a{
+            display: flex;
+            margin-right: 0.24rem;
+            img{
+              width: 0.56rem;
+              height: 0.56rem;
+              border-radius: 50%;
+            }
+          }
+          .list{
+            margin-top:0.02rem;
+            .name{
+              display: flex;
+              margin-bottom:0.08rem;
+              .name_l{
+                font-size:0.2rem;
+                line-height:0.24rem;
+                color:rgb(7, 17, 27);
+              }
+              .name_r{
+                font-size:0.2rem;
+                line-height:0.24rem;
+                color:rgb(147,153,159);
+                position: absolute;
+                right:0;
+              }
+            }
+            .star{
+              display: flex;
+              margin-bottom:0.12rem;
+              align-items:center;
+              img{
+                width: 0.2rem;
+                height: 0.2rem;
+                margin-right:0.05rem;
+              }
+              span{
+                font-size:0.2rem;
+                font-weight:200;
+                color:rgb(147,153,159);
+                margin-left: 0.05rem;
+              }
+            }
+            .text{
+              font-size:0.24rem;
+              line-height:0.36rem;
+              color:rgb(7, 17, 27);
+              margin-bottom:0.16rem;
+            }
+            .label{
+              display: flex;
+              img{
+                width:0.4rem;
+                height:0.4rem;
+              }
+              li{
+                width:1rem;
+                border:1px solid rgba(7, 17, 27,0.1);
+                border-radius:0.02rem;
+                background-color:rgb(255, 255, 255);
+                overflow:hidden;
+                text-overflow:ellipsis;
+                white-space: nowrap;
+                font-size:0.18rem;
+                color:rgb(147,153,159);
+                line-height:0.34rem;
+                margin-right:0.16rem;
+                padding:0 0.12rem 0.03rem 0.12rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // 商家页
+  .merchant{
+    // 题栏标
+    .business{
+      overflow-y: auto;
+      .merchant_tit{
+        padding:0.36rem 0.36rem 0.36rem 0;
+        margin-left:0.36rem;
+        margin-right:0.36rem;
+        border-bottom:1px solid rgba(7, 17, 27, 0.1);
+        position: relative;
+        h3{
+          font-size:0.28rem;
+          line-height:0.28rem;
+          color:rgb(7, 17, 27);
+          font-weight:normal;
+          margin-bottom:0.16rem;
+        }
+        .title_img{
+          display: flex;
+          img{
+            width:0.4rem;
+            height:0.4rem;
+            margin-right:0.16rem;
+          }
+        }
+        a{
+          font-size:0.20rem;
+          line-height:0.44rem;
+          color:rgb(77, 85, 93);
+          position:absolute;
+          top:0.8rem;
+          left:2.89rem;
+        }
+        .xin{
+          position: absolute;
+          right:0.13rem;
+          top:-0.22rem;
+          img{
+            width:0.44rem;
+            height:0.4rem;
+          }
+        }
+        //已收藏和收藏
+        .ysc,.sc{
+          position: absolute;
+          top:0.96rem;
+          font-size:0.20rem;
+          line-height:0.2rem;
+          color:rgb(77, 85, 93);
+        }
+        .ysc{
+          right:0;
+        }
+        .sc{
+          right:0.12rem;
+        }
+      }
+      // 起送价、平均配送时间栏
+      .merchant_time{
+        padding:0.36rem 0;
+        display: flex;
+        justify-content:space-around;
+        align-items:center;
+        .time_one,.time_two,.time_three{
+          display: flex;
+          flex-direction:column;
+          align-items:center;
+          a{
+            font-size:0.2rem;
+            line-height:0.2rem;
+            color:rgb(147, 153, 159);
+            margin-bottom:0.08rem;
+          }
+          p{
+            display: flex;
+            .count{
+              font-weight:200;
+              font-size:0.48rem;
+              line-height:0.48rem;
+              color:rgb(7, 17, 27);
+            }
+            .yuan{
+              font-size:0.2rem;
+              line-height:0.48rem;
+              color:rgb(7, 17, 27);
+              padding-top: 0.08rem;
+            }
+          }
+        }
+        .time_one{
+          border-right:1px solid rgba(7, 17, 27, 0.1);
+          padding-right:0.84rem;
+          padding-left:0.84rem;
+        }
+        .time_two{
+          border-right:1px solid rgba(7, 17, 27, 0.1);
+          padding-right:0.64rem;
+          padding-left:0.64rem;
+        }
+        .time_three{
+          padding-right:0.42rem;
+          padding-left:0.42rem;
+        }
+      }
+      // 空白栏
+      .empty{
+        height:0.32rem;
+        background:#F3F5F7;
+        border-top:2px solid rgba(7, 17, 27, 0.1);
+        border-bottom:2px solid rgba(7, 17, 27, 0.1);
+      }
+      // 公告与活动栏
+      .declare{
+        padding:0.36rem 0.36rem 0.32rem 0.36rem;
+        .declare_tit{
+          font-size:0.28rem;
+          line-height:0.28rem;
+          color:rgb(7, 17, 27);
+          margin-bottom:0.16rem;
+        }
+        .declare_txt{
+          font-size:0.24rem;
+          line-height:0.48rem;
+          color:rgb(240, 20, 20);
+          font-weight:200;
+          margin-left:0.24rem;
+        }
+      }
+      //七个优惠栏
+      .one,.two,.three,.four,.five{
+        padding:0.32rem 0.36rem 0.32rem 0.24rem;
+        margin-left:0.36rem;
+        margin-right:0.36rem;
+        border-top:1px solid rgba(7, 17, 27, 0.1);
+        .lists_one{
+          display: flex;
+          height:0.32rem;
+          img{
+            width:0.32rem;
+            height:0.32rem;
+            margin-right:0.12rem;
+          }
+          span{
+            font-size:0.24rem;
+            line-height:0.32rem;
+            color:rgb(7, 17, 27);
+            font-weight:200;
+          }
+        }
+      }
+      // 商家实景
+      .new_house{
+        padding:0.36rem 0 0.36rem 0.36rem;
+        p{
+          font-size:0.28rem;
+          line-height:0.28rem;
+          color:rgb(7, 17, 27);
+          margin-bottom:0.24rem;
+        }
+        .swiper-wrapper{
+          .a{
+            width:2.4rem;
+            height:1.8rem;
+            margin-right:0.12rem;
+            display: flex;
+            img{
+              width:2.4rem;
+              height:1.8rem;
+            }
+          }
+        }
+      }
+      //商家信息
+      .information{
+        padding:0.36rem;
+        .title{
+          font-size:0.28rem;
+          line-height:0.28rem;
+          color:rgb(7, 17, 27);
+          margin-bottom:0.24rem;
+        }
+        .invoice{
+          p{
+            padding:0.32rem 0;
+            font-size:0.24rem;
+            line-height:0.32rem;
+            font-weight:200;
+            color:rgb(7, 17, 27);
+            padding-left:0.24rem;
+            border-top:1px solid rgba(7, 17, 27, 0.1);
+          }
+        }
+        hr{
+          height:1px;
+          border:none;
+          background-color:rgba(7, 17, 27, 0.1);
+        }
+      }
+    }
+  }
+}
+
+// 尾部
+footer{
+  position: absolute;
+  bottom:0;
+  background-color:#141d27;
+  width:100%;
+  height:0.94rem;
+  opacity: 0.95;
+  z-index: 3;
+  //购物车
+  .shoppingCart{
+    position: absolute;
+    width:1.12rem;
+    height:1.12rem;
+    border-radius:50%;
+    background-color:#141d27;
+    bottom: 0.04rem;
+    left: 0.24rem;
+    .circle{
+      position: absolute;
+      bottom: 0.16rem;
+      left: 0.12rem;
+      width: 0.88rem;
+      height: 0.88rem;
+      border-radius: 50%;
+      background: rgb(43,41,59);
+      z-index:1;
+      .icon-gouwuchekong{
+        position: absolute;
+        left:0.2rem;
+        bottom: 0.2rem;
+        color:rgba(255,255,255,0.4);
+        font-size: 0.48rem;
+      }
+    }
+  }
+  //总价
+  .footer_price{
+    position: absolute;
+    left:1.6rem;
+    bottom:0.24rem;
+    width:0.7rem;
+    height:0.48rem;
+    border-right: 0.01rem solid rgba(255,255,255,0.1);
+    p{
+      font-size:0.32rem;
+      color:rgba(255, 255, 255, 0.4);
+      line-height:0.48rem;
+      font-weight:700;
+    }
+  }
+  //配送费
+  .deliveryCost{
+    position:absolute;
+    left:2.48rem;
+    bottom:0.24rem;
+    font-size:0.24rem;
+    color:rgba(255, 255, 255, 0.4);
+    line-height:0.48rem;
+  }
+  //起送价
+  .count{
+    position: absolute;
+    width:2.1rem;
+    height:0.94rem;
+    right:0;
+    bottom:0;
+    font-weight:700;
+    background: rgb(43,41,59);
+    color:rgba(255, 255, 255, 0.4);
+    font-size:0.24rem;
+    line-height:0.94rem;
+    text-align:center;
+  }
+}
+
+//优惠信息页
+.reduce_price{
+  overflow-y:auto;
+  width:100%;
+  height:100%;
+  background-color:rgba(7, 17, 27, 0.8);
+  position: fixed;
+  top: 0;
+  left:0;
+  z-index:5;
+  display: flex;
+  flex-direction:column;
+  .title{
+    padding:1.28rem 0.72rem 0.56rem 0.72rem;
+    text-align:center;
+    h4{
+      font-size:0.32rem;
+      color:rgb(255, 255, 255);
+      line-height:0.32rem;
+      font-weight:700;
+      margin-bottom:0.32rem;
+    }
+    .xing{
+      display: flex;
+      margin-bottom:0.56rem;
+      justify-content:center;
+      margin-left:0.4rem;
+      img{
+        padding-right:0.4rem;
+      }
+    }
+    .txt{
+      display: flex;
+      font-size:0.28rem;
+      color:rgb(255, 255, 255);
+      line-height:0.02rem;
+      font-weight:700;
+      justify-content:center;
+      .left{
+        width:2.24rem;
+        height:0.02rem;
+        margin-right:0.24rem;
+        border-bottom:2px solid rgba(255, 255, 255, 0.2);
+      }
+      .right{
+        width:2.24rem;
+        height:0.02rem;
+        margin-left:0.22rem;
+        border-bottom:2px solid rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+  .youhui{
+    padding:0 0.72rem 0.56rem 0.72rem;
+    margin-left:0.24rem;
+    margin-right:0.24rem;
+    .lists_one,.lists_two,.lists_three,.lists_four,.lists_five{
+      display: flex;
+      height:0.32rem;
+      margin-bottom: 0.24rem;
+      img{
+        width:0.32rem;
+        height:0.32rem;
+        margin-right:0.12rem;
+      }
+      span{
+        font-size:0.24rem;
+        line-height:0.32rem;
+        color:rgb(255, 255, 255);
+        font-weight:200;
+      }
+    }
+  }
+  .noticeTxt{
+    display: flex;
+    font-size:0.28rem;
+    color:rgb(255, 255, 255);
+    line-height:0.02rem;
+    font-weight:700;
+    justify-content:center;
+    margin-bottom:0.52rem;
+
+    .left{
+      width:2.24rem;
+      height:0.02rem;
+      margin-right:0.24rem;
+      border-bottom:2px solid rgba(255, 255, 255, 0.2);
+    }
+    .right{
+      width:2.24rem;
+      height:0.02rem;
+      margin-left:0.24rem;
+      border-bottom:2px solid rgba(255, 255, 255, 0.2);
+    }
+  }
+  .reduce_price_txt{
+    flex:1;
+    font-weight:200;
+    font-size:0.24rem;
+    color:rgb(255, 255, 255);
+    line-height:0.48rem;
+    padding:0 0.72rem 0 0.72rem;
+    margin-left:0.24rem;
+    margin-right:0.24rem;
+  }
+  .close{
+    flex:0;
+    text-align:center;
+    font-size:0.64rem;
+    color:rgba(255,255,255,0.5);
+  }
+}
+
+//食物详情页面
+.shop_details{
+  overflow-y:auto;
+  width:100%;
+  height:100%;
+  z-index:2;
+  background:white;
+  position:fixed;
+  top: 0;
+  left:100%;
+  .big_img{
+    display: flex;
+    .big_imgs{
+        flex:1;
+      img{
+        height:7.5rem;
+      }
+    }
+    .shop_details_cha{
+      flex:0;
+      position:absolute;
+      left:0.2rem;
+      top:0;
+      font-size:0.68rem;
+      color:@c;
+    }
+  }
+  .shop_details_word{
+    position:relative;
+    .foods_title{
+      padding-top:0.36rem;
+      padding-left:0.36rem;
+      .txt_one{
+        color:rgb(7,17,27);
+        font-size:0.28rem;
+        line-height:0.28rem;
+        font-weight:700;
+        margin-bottom:0.16rem;
+      }
+      .txt_three{
+        color:rgb(147,153,159);
+        font-size:0.2rem;
+        line-height:0.2rem;
+        margin-bottom:0.36rem;
+      }
+      .txt_four{
+        display: flex;
+        font-weight:bold;
+        margin-bottom:0.36rem;
+        .price1{
+          font-size:0.28rem;
+          line-height:0.48rem;
+          color:rgb(240,20,20);
+          margin-right: 0.16rem;
+        }
+        .price2{
+          font-size:0.2rem;
+          line-height:0.48rem;
+          text-decoration:line-through;
+          color:rgb(147,153,159);
+        }
+      }
+    }
+    .shopping{
+      width:1.48rem;
+      height:0.48rem;
+      border-radius:0.24rem;
+      background-color:rgb(0, 160, 220);
+      font-size:0.2rem;
+      color:rgb(255, 255, 255);
+      line-height:0.24rem;
+      text-align:center;
+      line-height:0.48rem;
+      position:absolute;
+      right:0.36rem;
+      bottom:0rem;
+    }
+  }
+  .hui{
+    height:0.32rem;
+    background:#f3f5f7;
+    border-bottom:2px solid rgba(7, 17, 27, 0.1);
+    border-top:2px solid rgba(7, 17, 27, 0.1);
+  }
+  .product_presentation{
+    padding-left:0.36rem;
+    padding-top:0.36rem;
+    p{
+      font-size:0.28rem;
+      font-weight:400;
+      color:rgb(7, 17, 27);
+      line-height:0.28rem;
+    }
+  }
+  .product_presentation_txt{
+    padding-left:0.52rem;
+    padding-right:0.52rem;
+    margin-top:0.12rem;
+    p{
+      font-size:0.24rem;
+      font-weight:200;
+      color:rgb(77, 85, 93);
+      line-height:0.48rem;
+    }
+  }
+  .title{
+    border-bottom:1px solid rgba(7, 17, 27, 0.1);
+    display: flex;
+    padding:0.35rem 0.36rem 0.36rem 0;
+    margin:0 0.36rem 0 0.36rem;
+    a{
+      display:block;
+      width:1.4rem;
+      height:0.64rem;
+      line-height:0.64rem;
+      text-align:center;
+      font-size:0.24rem;
+      margin-left:0.2rem;
+      b{
+        font-size:0.18rem;
+        margin-left:2px;
+        margin-bottom:3px;
+      }
+    }
+    .all{
+      background:#00a0dc;
+    }
+    .title_color{
+      color:red;
+    }
+    .satisfaction{
+      background:#CCECF8;
+    }
+    .unsatisfaction{
+      background:#E9EBEC;
+    }
+  }
+  .matter{
+    height:0.97rem;
+    border-bottom:1px solid rgba(7, 17, 27, 0.1);
+    display: flex;
+    line-height:0.97rem;
+    span{
+      font-size:0.48rem;
+      margin-left:0.48rem;
+      color:rgb(147, 153, 159);
+    }
+    p{
+      font-size:0.26rem;
+      color:rgb(147, 153, 159);
+      margin-left:0.2rem;
+    }
+  }
+  .user-slide_fus{
+    .user-slide{
+      display: flex;
+      position:relative;
+      border-bottom:1px solid rgba(7, 17, 27, 0.1);
+      margin-left:0.36rem;
+      margin-right:0.36rem;
+      .user{
+        img{
+          display:block;
+          width:0.56rem;
+          height:0.56rem;
+          border-radius:50%;
+          margin-left:0.36rem;
+          margin-top:0.36rem;
+        }
+      }
+      .user_name{
+        .ju{
+          margin-top:0.36rem;
+          font-size:0.2rem;
+          color:rgb(147, 153, 159);
+          line-height:0.24rem;
+          margin-left:0.12rem;
+        }
+        b{
+          font-size:0.2rem;
+          font-weight:200;
+          color:rgb(147, 153, 159);
+          line-height:0.24rem;
+          margin-left:2.5rem;
+          position:absolute;
+          top:0.36rem;
+          right:0.36rem;
+        }
+        .user_name_txt{
+          font-size:0.24rem;
+          color:rgb(7, 17, 27);
+          line-height:0.36rem;
+          padding-right: 0.36rem;
+          margin-top:0.12rem;
+          margin-left:0.12rem;
+        }
+        .user_name_icon{
+          margin-top:0.16rem;
+          display: flex;
+
+          margin-right:0.36rem;
+          padding-bottom: 0.36rem;
+          margin-left:0.2rem;
+          span{
+            width:0.25rem;
+            height:0.25rem;
+            color:#00a0dc;
+          }
+          .icon-cai{
+            color:#a4a9ae;
+          }
+        }
+      }
+    }
+  }
+  .kong{
+    height:1rem;
+  }
+}
+
+
+

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <link href="./css/index.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_810397_00dck95enpscl.css">
+</head>
+<body>
+  <!-- 头部 -->
+  <header>
+    <div class="header_top">
+      <img src="" class="logo" />
+      <div class="text">
+        <p class="brand"><img src="images/brand@2x.png"><span></span></p>
+        <p class="timer"></p>
+        <p class="discounts"><img src="images/decrease_1@2x.png"><span></span></p>
+        <p class="count">5个 ></p>
+      </div>
+    </div>
+    <!-- 头部公告栏 -->
+    <div class="notic">
+      <img src="images/bulletin@2x.png">
+      <p></p>
+      <b>></b>
+    </div>
+  </header>
+  <!-- 导航栏 -->
+  <nav class="tabs">
+    <span class="active">商品</span>
+    <span>评价</span>
+    <span>商家</span>
+  </nav>
+
+  <!-- 导航栏对应的三大部分 -->
+  <div id="tabs-container" class="swiper-container">
+    <div class="bd swiper-wrapper">
+      <!-- 商品栏 -->
+      <div class="swiper-slide" >
+        <div class="goods">
+          <!-- 左边竖向导航栏 -->
+          <div class="swiper-container gallery-left">
+            <ul class="swiper-wrapper">
+          <!-- <li class="swiper-slide on"><span></span></li>
+              <li class="swiper-slide"><span><a><img src=""></a></span></li>
+              <li class="swiper-slide"><span></span></li>
+              <li class="swiper-slide"><span></span></li>
+              <li class="swiper-slide"><span></span></li>
+              <li class="swiper-slide"><span></span></li>
+              <li class="swiper-slide"><span></span></li>
+              <li class="swiper-slide"><span></span></li> -->
+            </ul>
+          </div>
+          <!-- 右边食物菜单部分 -->
+          <div class="swiper-container gallery-thumbs">
+            <div class="swiper-wrapper menu">
+              <!-- <div class="swiper-slide">
+                <h4>热销榜</h4>
+                <div class="preserved_egg">
+                  <img src="http://static.galileo.xiaojukeji.com/static/tms/    seller_avatar_256px.jpg" class="logo2" />
+                  <div class="mx">
+                    <p class="txt_one">热销南瓜粥</p>
+                    <p class="txt_three">月售1132份&nbsp;&nbsp;好评率100%</p>
+                    <p class="txt_four">
+                      <span class="price1">￥24</span>
+                      <span class="price2">￥28</span>
+                    </p>
+                  </div>
+                  <p class="subtract">-</p>
+                  <p class="add">+</p>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 评价栏 -->
+      <div class="swiper-slide comment">
+        <div class="ratings">
+          <!-- 评分栏 -->
+          <div class="evaluate_top">
+            <div class="grade">
+              <p class="score_one"></p>
+              <p class="score_two">综合评分</p>
+              <p class="score_three"></p>
+            </div>
+
+            <div class="starLevel">
+              <p class="star_one">
+                <span class="attitude">服务态度</span>
+                <span class="star_img"></span>
+                <span class="minute"></span>
+              </p>
+              <p class="star_two">
+                <span class="attitude">食物评分</span>
+                <span class="star_img"></span>
+                <span class="minute"></span>
+              </p>
+              <p class="star_three">
+                <span class="time">送达时间</span>
+                <span class="minute"></span>
+              </p>
+            </div>
+          </div>
+          <!-- 灰色空白区 -->
+          <div class="blank"></div>
+          <!-- 全部、满意、不满意 -->
+          <div class="evaluate_title">
+            <div class="title_one">
+              <p class="all">
+                <span>全部</span>
+                <a></a>
+              </p>
+              <p class="satisfaction">
+                <span>满意</span>
+                <a></a>
+              </p>
+              <p class="discontent">
+                <span>不满意</span>
+                <a></a>
+              </p>
+            </div>
+            <div class="title_two">
+              <img src="images/duihao.png">
+              <span>只看有内容的评价</span>
+            </div>
+          </div>
+          <!-- 网友评价内容 -->
+          <div class="evaluate_txt_f">
+          <!-- <div class="evaluate_txt">
+            <a><img src=""/></a>
+            <div class="list">
+              <p class="name">
+                <span class="name_l"></span>
+                <span class="name_r">2016-07-13 20:30</span>
+              </p>
+              <p class="star">
+                <img src=""/>
+                <span>80分钟送达</span>
+              </p>
+              <p class="text"></p>
+              <ul class="label">
+                <img src=""/>
+                <li></li>
+              </ul>
+            </div>
+          </div> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- 商家栏 -->
+      <div class="swiper-slide merchant">
+        <div class="business">
+          <!-- 题栏标 -->
+          <div class="merchant_tit">
+            <h3></h3>
+            <p class="title_img">
+              <!-- <img src=""/> -->
+            </p>
+            <a></a>
+            <p class="xin"><img src="images/huixin.png"/></p>
+            <span class="ysc" style="display:none">已收藏</span>
+            <span class="sc">收藏</span>
+          </div>
+          <!-- 起送价、平均配送时间栏 -->
+          <div class="merchant_time">
+            <div class="time_one">
+              <a>起送价</a>
+              <p>
+                <span class="count"></span>
+                <span class="yuan">元</span>
+              </p>
+            </div>
+            <div class="time_two">
+              <a>商家配送</a>
+              <p>
+                <span class="count"></span>
+                <span class="yuan">元</span>
+              </p>
+            </div>
+            <div class="time_three">
+              <a>平均配送时间</a>
+              <p>
+                <span class="count"></span>
+                <span class="yuan">分钟</span>
+              </p>
+            </div>
+          </div>
+          <!-- 空白内容 -->
+          <div class="empty"></div>
+          <!-- 公告与活动栏 -->
+          <div class="declare">
+            <p class="declare_tit">公告与活动</p>
+            <p class="declare_txt"></p>
+          </div>
+          <!-- 七个优惠栏 -->
+          <div class="one">
+            <p class="lists_one">
+              <img src="images/decrease_4@2x.png"/>
+              <span></span>
+            </p>
+          </div>
+          <div class="two">
+            <p class="lists_one">
+              <img src="images/discount_4@2x.png"/>
+              <span></span>
+            </p>
+          </div>
+          <div class="three">
+            <p class="lists_one">
+              <img src="images/special_4@2x.png"/>
+              <span></span>
+            </p>
+          </div>
+          <div class="four">
+            <p class="lists_one">
+              <img src="images/invoice_4@2x.png"/>
+              <span></span>
+            </p>
+          </div>
+          <div class="five">
+            <p class="lists_one">
+              <img src="images/guarantee_4@2x.png"/>
+              <span></span>
+            </p>
+          </div>
+          <!-- 空白内容 -->
+          <div class="empty"></div>
+          <!-- 商家实景 -->
+          <div class="swiper-container new_house">
+            <p>商家实景</p>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide a"><img src="" /></div>
+            </div>
+          </div>
+          <!-- 空白内容 -->
+          <div class="empty"></div>
+          <!-- 商家信息 -->
+          <div class="information">
+            <p class="title">商家信息</p>
+            <div class="invoice"><p></p></div>
+            <hr>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 尾部 -->
+  <footer>
+    <div class="shoppingCart">
+      <div class="circle">
+        <span class="iconfont  icon-gouwuchekong"></span>
+      </div>
+    </div>
+    <div class="footer_price">
+      <p>￥0</p>
+    </div>
+    <p class="deliveryCost">另需配送费￥4元</p>
+    <div class="count">￥20元起送</div>
+  </footer>
+
+  <!-- 优惠信息页 -->
+  <div class="reduce_price" style="display:none">
+    <div class="title">
+      <h4></h4>
+      <p class="xing">
+        <!-- <img src="images/star36_on@2x.png"/>-->
+      </p>
+      <p class="txt">
+        <span class="left"></span>
+        优惠信息
+        <span class="right"></span>
+      </p>
+    </div>
+    <div class="youhui">
+      <p class="lists_one">
+        <img src="images/decrease_4@2x.png"/>
+        <span></span>
+      </p>
+      <p class="lists_two">
+        <img src="images/discount_4@2x.png"/>
+        <span></span>
+      </p>
+      <p class="lists_three">
+        <img src="images/discount_4@2x.png"/>
+        <span></span>
+      </p>
+      <p class="lists_four">
+        <img src="images/special_4@2x.png"/>
+        <span></span>
+      </p>
+      <p class="lists_five">
+        <img src="images/special_4@2x.png"/>
+        <span></span>
+      </p>
+    </div>
+    <div class="noticeTxt">
+      <span class="left"></span>
+      商家公告
+      <span class="right"></span>
+    </div>
+
+    <div class="reduce_price_txt">
+
+    </div>
+    <div class="close">
+      x
+    </div>
+  </div>
+
+  <!-- 食物页面详情 -->
+  <div class="shop_details">
+    <div class="big_img">
+      <div class="big_imgs">
+        <!-- <img src=""/> -->
+      </div>
+      <p class="shop_details_cha"><</p>
+    </div>
+    <div class="shop_details_word">
+      <div class="foods_title">
+        <p class="txt_one"></p>
+        <p class="txt_three"></p>
+        <p class="txt_four">
+          <span class="price1"></span>
+          <span class="price2"></span>
+        </p>
+      </div>
+      <p class="shopping">加入购物车</p>
+    </div>
+    <!-- 灰色的空白部分 -->
+    <div class="hui"></div>
+    <div class="product_presentation">
+      <p>商品介绍</p>
+    </div>
+    <div class="product_presentation_txt">
+      <p></p>
+    </div>
+    <!-- 灰色的空白部分 -->
+    <div class="hui"></div>
+    <div class="title">
+      <a href="#" class="all title_color">全部<b>57</b></a >
+      <a href="#" class="satisfaction">推荐<b>47</b></a >
+      <a href="#" class="unsatisfaction">吐槽<b>10</b></a >
+    </div>
+    <!-- 只看有内容的评价 -->
+    <div class="matter">
+      <span href="#" class="iconfont icon-duihao"></span>
+      <p>只看有内容的评价</p>
+    </div>
+    <!-- 买家评价内容 -->
+    <div class="user-slide_fus">
+      <!-- <div class="user-slide">
+        <div class="user">
+         <!--  <img src="http://static.galileo.xstatic/tmdefault_header.png" alt=""> -->
+        <!-- </div>
+        <div class="user_name">
+          <p class="ju">聚***家</p>
+          <b>2016-07-13 20:33</b>
+          <p class="user_name_txt">不非常赞,以后也会常来吃,强烈推这一家,非,以后也会常来吃,强烈推荐.</p>
+          <p class="user_name_icon">
+            <span class="iconfont icon-dianzan1"></span>
+          </p>
+        </div>
+      </div> -->
+    </div>
+    <div class="kong">
+    </div>
+  </div>
+
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  <script src="./js/height.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
